@@ -1,0 +1,39 @@
+test_01_existe_csv_y_columnas (test_pipeline.TestPipelineRobusto.test_01_existe_csv_y_columnas) ... ok
+test_02_360_ids_unicos (test_pipeline.TestPipelineRobusto.test_02_360_ids_unicos) ... ok
+test_03_dataset_reproducible_desde_generador (test_pipeline.TestPipelineRobusto.test_03_dataset_reproducible_desde_generador) ... ok
+test_04_nulos_en_numeric_y_categoric (test_pipeline.TestPipelineRobusto.test_04_nulos_en_numeric_y_categoric) ... ok
+test_05_variables_target_bien_separadas (test_pipeline.TestPipelineRobusto.test_05_variables_target_bien_separadas) ... ok
+test_06_split_antes_de_fit_y_sin_solapamiento (test_pipeline.TestPipelineRobusto.test_06_split_antes_de_fit_y_sin_solapamiento) ... ok
+test_07_split_estratificado_y_ambas_clases (test_pipeline.TestPipelineRobusto.test_07_split_estratificado_y_ambas_clases) ... ok
+test_08_pipeline_y_column_transformer (test_pipeline.TestPipelineRobusto.test_08_pipeline_y_column_transformer) ... ok
+test_09_pipeline_numerico_y_dos_pasos (test_pipeline.TestPipelineRobusto.test_09_pipeline_numerico_y_dos_pasos) ... ok
+test_10_pipeline_categorico_y_categorias_nuevas (test_pipeline.TestPipelineRobusto.test_10_pipeline_categorico_y_categorias_nuevas) ... ok
+test_11_medianas_solo_calculadas_con_train (test_pipeline.TestPipelineRobusto.test_11_medianas_solo_calculadas_con_train) ... ok
+test_12_standard_scaler_solo_train (test_pipeline.TestPipelineRobusto.test_12_standard_scaler_solo_train) ... ok
+test_13_transformaciones_sin_nan (test_pipeline.TestPipelineRobusto.test_13_transformaciones_sin_nan) ... ok
+test_14_prediccion_y_probabilidades_test (test_pipeline.TestPipelineRobusto.test_14_prediccion_y_probabilidades_test) ... ok
+test_15_cliente_nuevo_con_ciudad_desconocida (test_pipeline.TestPipelineRobusto.test_15_cliente_nuevo_con_ciudad_desconocida) ... ok
+test_16_cliente_nuevo_con_nulos (test_pipeline.TestPipelineRobusto.test_16_cliente_nuevo_con_nulos) ... ok
+test_17_schema_inferencia_incompleto_rechazado (test_pipeline.TestPipelineRobusto.test_17_schema_inferencia_incompleto_rechazado) ... ok
+test_18_dataset_target_invalido_rechazado (test_pipeline.TestPipelineRobusto.test_18_dataset_target_invalido_rechazado) ... ok
+test_19_joblib_ida_y_vuelta (test_pipeline.TestPipelineRobusto.test_19_joblib_ida_y_vuelta) ... ok
+test_20_entrenamiento_automatico_genera_archivos_y_metricas (test_pipeline.TestPipelineRobusto.test_20_entrenamiento_automatico_genera_archivos_y_metricas) ... ok
+test_21_modelo_incluye_preprocesamiento_entero (test_pipeline.TestPipelineRobusto.test_21_modelo_incluye_preprocesamiento_entero) ... ok
+test_22_comprobacion_de_features_ausentes (test_pipeline.TestPipelineRobusto.test_22_comprobacion_de_features_ausentes) ... ok
+
+----------------------------------------------------------------------
+Ran 22 tests in 0.083s
+
+OK
+PRE-ENTREGA 9 — PIPELINE ENTRENADO Y VALIDADO
+Dataset: 360 registros | Entrenamiento: 270 | Prueba: 90
+Distribucion objetivo: {'0': 149, '1': 211}
+accuracy: 0.7667
+precision: 0.7963
+recall: 0.8113
+f1: 0.8037
+matriz_confusion: [[26, 11], [10, 43]]
+Prediccion sobre cliente nuevo con valores faltantes y categorias no vistas: 1
+Modelo guardado: /tmp/tmpunt5elfh/pipeline_compras.joblib
+Metricas guardadas: /tmp/tmpunt5elfh/metricas.json
+VALIDACIONES FINALES: OK

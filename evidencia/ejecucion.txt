@@ -1,0 +1,15 @@
+PRE-ENTREGA 9 — PIPELINE ENTRENADO Y VALIDADO
+Dataset: 360 registros | Entrenamiento: 270 | Prueba: 90
+Distribucion objetivo: {'0': 149, '1': 211}
+accuracy: 0.7667
+precision: 0.7963
+recall: 0.8113
+f1: 0.8037
+matriz_confusion: [[26, 11], [10, 43]]
+Prediccion sobre cliente nuevo con valores faltantes y categorias no vistas: 1
+Modelo guardado: /mnt/data/DSII_Preentrega_9_Pipeline_Robusto/artefactos/pipeline_compras.joblib
+Metricas guardadas: /mnt/data/DSII_Preentrega_9_Pipeline_Robusto/artefactos/metricas.json
+VALIDACIONES FINALES: OK
+Cliente nuevo 1: compro=1 | probabilidad=0.861
+Cliente nuevo 2: compro=0 | probabilidad=0.112
+INFERENCIA CON JOBLIB: OK

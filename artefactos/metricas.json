@@ -1,0 +1,35 @@
+{
+  "ejercicio": "Data Science II - Pre-entrega 9",
+  "dataset": "Ficticio y reproducible (no representa clientes reales)",
+  "total_registros": 360,
+  "registros_train": 270,
+  "registros_test": 90,
+  "distribucion_objetivo_total": {
+    "0": 149,
+    "1": 211
+  },
+  "metricas_test": {
+    "accuracy": 0.7667,
+    "precision": 0.7963,
+    "recall": 0.8113,
+    "f1": 0.8037,
+    "matriz_confusion": [
+      [
+        26,
+        11
+      ],
+      [
+        10,
+        43
+      ]
+    ]
+  },
+  "dependencias": {
+    "scikit_learn": "1.8.0",
+    "pandas": "2.2.3",
+    "numpy": "2.3.5",
+    "joblib": "1.5.3"
+  },
+  "fecha_corte": "No aplica: muestra sintética sin orden temporal",
+  "metodologia": "train_test_split estratificado 75/25; fit solo sobre X_train; hold-out X_test"
+}
